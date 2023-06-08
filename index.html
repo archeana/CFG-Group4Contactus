@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us!</title>
+  <style>
+    /* CSS for the page header */
+    body{
+        background-color: #F1E2DA;
+    }
+    .header, p {
+      color: #112b45;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 14px;
+}
+    
+    
+    /* CSS for the main content section */
+    .content {
+      margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CSS for the contact form */
+    .contact {
+      background-color: #A4C7D5;
+      padding: 20px;
+    }
+
+    fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #204352;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+    label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #F5F5F5
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #F1E2DA;
+  border: 1px solid #F5F5F5;
+  color: black;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #204352;
+  border-color: white;
+  min-width: 300px;
+}
+
+    /* CSS for the image section */
+    .image {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust grid layout for smaller screens */
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+
+    .submit {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+} 
+
+
+  .submit:hover {
+  color: #fff;
+  box-shadow: inset 500px 0 0 0 #54b3d6;;
+} 
+
+/* Presentational styles */
+.submit {
+  color: #54b3d6;
+  line-height: 1.5;
+  text-decoration: none;
+} 
+
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Contact us!</h1>
+  </header>
+  <p>Our team is happy to answer any of your questions. Fill out the form and we’ll be in touch as soon as possible.</p>
+  <div class="content">
+    <div class="contact">
+      <form method="post" action="#">
+        <fieldset>
+          <label for="your-name">Your Name: <input id="your-name" name="your-name" type="text" required /></label>
+          <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+          <label for="phone">Phone (optional): <input id="phone" name="phone" type="phone" /></label>
+        </fieldset>
+        <fieldset>
+          <label for="question">How can we help you?
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Hey! My name is ..."></textarea>
+          </label>
+        </fieldset>
+        <input class="submit" type="submit" value="Send Email" />
+      </form>
+    </div>
+
+    <div class="image">
+      <img src="Emails-rafiki.png" alt="Image">
+    </div>
+  </div>
+</body>
+</html>
