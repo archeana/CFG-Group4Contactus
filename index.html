@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us!</title>
-  <style>
-    /* CSS for the page header */
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <link rel="stylesheet" href="Footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+  <script src="https://kit.fontawesome.com/18dc082c82.js" crossorigin="anonymous"></script>
+<style>
+  /* CSS for the page header */
     body{
         background-color: #F1E2DA;
     }
@@ -21,7 +26,128 @@
 p {
   font-size: 14px;
 }
-    
+.logo{
+    animation-delay: none;
+    font-size: large;
+    color: white;
+}
+
+
+.logopic{
+    position:left;
+    height:70px;
+}
+
+/*Navigation Code Below*/
+.navbar{
+    background-color:#F1E2DA;
+    font-family: inherit;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1111x;
+    overflow:auto;
+}
+
+
+.navdiv{
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle_btn {
+    color: #204352;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+/*Navigation Listing*/
+ul{
+    list-style-type: none;
+ }
+ 
+ul a {
+margin: 0;
+padding:0;
+list-style:none;
+ }
+
+
+
+
+li{
+float: left;
+list-style: none;
+display: inline-block;
+}
+
+
+li a{
+color: #204352;
+font-size: 18px;
+margin-right: 25px;
+}
+
+
+/*Button Code Below*/
+button{
+    background-color: rgb(94,116,125);
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+button a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+/*Animation Code for Nav. Listing*/
+a:link{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:15px;
+    text-transform:uppercase;
+    font-size:18px;
+    font-family:normal;
+    }
+
+
+a:hover{
+    text-decoration: underline;
+    background-color: #5e747d
+    }
+
+
+ /* Navbar links */
+.active {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+
+  }
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }  
     
     /* CSS for the main content section */
     .content {
@@ -123,6 +249,21 @@ input[type="submit"] {
   </style>
 </head>
 <body>
+    <!-- THIS IS THE NAVIGATION BAR-->
+    <nav class="navbar">
+      <div class="navdiv">
+      <div class="logo"><img src="./women in tech (no boarder, clear backgroud).png" class="logopic"></div>
+          <ul>
+              <li><a href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fa fa-fw fa-user"></i>Profiles</a></li>
+              <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Get Involved</a></li>
+              <button><a href="#">Contact Us</a></button>
+          </ul>
+          <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </div>
+  </nav>
   <header class="header">
     <h1>Contact us!</h1>
   </header>
@@ -148,5 +289,47 @@ input[type="submit"] {
       <img src="Emails-rafiki.png" alt="Image">
     </div>
   </div>
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Initiative</h4>
+                <ul>
+                    <li><a href="https://codefirstgirls.com/about-us/#:~:text=We%20are%20on%20a%20mission,transforming%20local%20economies%20and%20communities.">About us</a></li>
+                    <li><a href="https://www.techgirlsmovement.org/">Related Foundations</a></li>
+                    <li><a href="https://codefirstgirls.com/privacy-policy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Need help?</h4>
+                <ul>
+                    <li><a href="https://codefirstgirls.com/community-faqs/">FAQ</a></li>
+                    <li><a href="Contactuspage.html">Get in touch</a></li>
+                    <li><a href="https://www.roberthalf.com/jobs/technology-and-it">Counseling and Job board</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="https://www.forbes.com/advisor/education/best-coding-bootcamps/">Tech Bootcamps</a></li>
+                    <li><a href="https://github.com/Dylan-Israel/ultimate-coding-resources">Free Resources</a></li>
+                    <li><a href="https://girlsintech.org/donate/">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/codefirstgirls/?hl=en"><i class="fa-brands fa-instagram" style="color: #feeeea;"></i></a>
+                    <a href="https://twitter.com/womenintech?lang=en"><i class="fa-brands fa-twitter" style="color: #feeeea;"></i></a>
+                    <a href="https://www.linkedin.com/company/code-first-girls/?originalSubdomain=uk"><i class="fa-brands fa-linkedin" style="color: #feeeea;"></i></a>
+                    <a href="https://www.tiktok.com/@codefirstgirls?lang=en"><i class="fa-brands fa-tiktok" style="color: #feeeea;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p> Copyright 2023. Designed by Team 4, 2023</p>
+</div>
 </body>
 </html>
