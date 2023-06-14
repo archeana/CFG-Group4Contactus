@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us!</title>
+  <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
   <link rel="stylesheet" href="Footer.css">
@@ -11,16 +12,16 @@
   <script src="https://kit.fontawesome.com/18dc082c82.js" crossorigin="anonymous"></script>
 <style>
   /* CSS for the page header */
-    body{
-        background-color: #F1E2DA;
-    }
-    .header, p {
-      color: #112b45;
-      padding: 20px;
-      text-align: center;
-    }
+ body{
+  background-color: #FEEEEA;
+}
+.header, p {
+  color: #112b45;
+  padding: 20px;
+  text-align: center;
+}
 
-    h1 {
+h1 {
   font-size: 40px;
 }
 p {
@@ -37,117 +38,6 @@ p {
     position:left;
     height:70px;
 }
-
-/*Navigation Code Below*/
-.navbar{
-    background-color:#F1E2DA;
-    font-family: inherit;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 1111x;
-    overflow:auto;
-}
-
-
-.navdiv{
-    display: inline;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.toggle_btn {
-    color: #204352;
-    font-size: 2em;
-    cursor: pointer;
-}
-
-
-/*Navigation Listing*/
-ul{
-    list-style-type: none;
- }
- 
-ul a {
-margin: 0;
-padding:0;
-list-style:none;
- }
-
-
-
-
-li{
-float: left;
-list-style: none;
-display: inline-block;
-}
-
-
-li a{
-color: #204352;
-font-size: 18px;
-margin-right: 25px;
-}
-
-
-/*Button Code Below*/
-button{
-    background-color: rgb(94,116,125);
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-
-button a{
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-
-
-
-/*Animation Code for Nav. Listing*/
-a:link{
-    color:rgb(255, 255, 255);
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    padding:15px;
-    text-transform:uppercase;
-    font-size:18px;
-    font-family:normal;
-    }
-
-
-a:hover{
-    text-decoration: underline;
-    background-color: #5e747d
-    }
-
-
- /* Navbar links */
-.active {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    display: inline-block;
-    list-style: none;
-    margin-right: 25px;
-
-  }
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }  
     
     /* CSS for the main content section */
     .content {
@@ -171,10 +61,10 @@ a:hover{
 fieldset:last-of-type {
   border-bottom: none;
 }
-    label {
+  label {
   display: block;
   margin: 0.5rem 0;
-  color: #F5F5F5
+  color: #FEEEEA
 }
 
 input,
@@ -187,7 +77,8 @@ select {
 
 input, textarea {
   background-color: #F1E2DA;
-  border: 1px solid #F5F5F5;
+  border: 1px solid #F1E2DA;
+;
   color: black;
 }
 
@@ -290,8 +181,9 @@ input[type="submit"] {
       <img src="Emails-rafiki.png" alt="Image">
     </div>
   </div>
-<footer>
-    <div class="footer-container grid-container">
+  <footer>
+    <div class="footer">
+      <div class="container">
         <div class="row">
           <div class="footer-col">
             <h4>Initiative</h4>
@@ -328,8 +220,9 @@ input[type="submit"] {
           </div>
         </div>
       </div>
+    </div>
     <div class="footer-bottom">
-    <p> Copyright 2023. Designed by Team 4, 2023</p>
+      <p> Copyright 2023. Designed by Team 4, 2023</p>
   </div>
   </footer>
   </html>
